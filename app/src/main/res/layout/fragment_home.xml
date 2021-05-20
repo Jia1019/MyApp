@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jia"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/coinNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/showcoinstyle"
+        android:layout_marginTop="60dp"
+        android:text="100"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:paddingLeft="35dp"
+        android:layout_marginLeft="15dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/money"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/studycontinue"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginTop="110dp">
+        <Chronometer
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:gravity="center"
+            android:format="00:00:00"
+            android:textSize="50sp"/>
+
+        <!--<ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_baseline_pause_24"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="120dp"/>-->
+
+        <TextView
+            android:id="@+id/currentColortv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/endStudyBtn"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="120dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/startStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:contentDescription="startStudy"
+        android:src="@drawable/ic_book_black_24"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/makeTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:contentDescription="makeTodo"
+        android:src="@drawable/ic__list_black_24"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:layout_marginTop="210dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:id="@+id/startstudy"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@drawable/start">
+
+                <GridLayout
+                    android:id="@+id/courseColorlistGridLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/courseColorRv"/>
+
+                </GridLayout>
+
+                <EditText
+                    android:id="@+id/courseName"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/currentClickColortv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="40dp"/>
+
+            <Button
+                android:id="@+id/startstudybtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="start"
+
+                android:backgroundTint="@color/blue"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

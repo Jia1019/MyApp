@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center|top">
+
+        <Button
+            android:id="@+id/studyColorBtn"
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/blue"/>
+
+    <TextView
+        android:id="@+id/studyItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>
